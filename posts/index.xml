@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 无名之地</title>
+    <link>http://uicosp.github.io/posts/</link>
+    <description>Recent content in Posts on 无名之地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 23 Nov 2020 15:24:57 +0800</lastBuildDate><atom:link href="http://uicosp.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>@EnableAspectJAutoProxy 导致Spring单测容器重启问题排查</title>
+      <link>http://uicosp.github.io/posts/enableaspectjautoproxy-%E5%AF%BC%E8%87%B4spring%E5%8D%95%E6%B5%8B%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AF%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</link>
+      <pubDate>Mon, 23 Nov 2020 15:24:57 +0800</pubDate>
+      
+      <guid>http://uicosp.github.io/posts/enableaspectjautoproxy-%E5%AF%BC%E8%87%B4spring%E5%8D%95%E6%B5%8B%E5%AE%B9%E5%99%A8%E9%87%8D%E5%90%AF%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</guid>
+      <description>Debug 跟踪调用栈
+SpringRunner(Class&amp;lt;?&amp;gt; clazz) super(clazz) SpringJUnit4ClassRunner(Class&amp;lt;?&amp;gt; clazz) createTestContextManager(clazz) return new TestContextManager(clazz) TestContextManager(Class&amp;lt;?&amp;gt; testClass) this(BootstrapUtils.resolveTestContextBootstrapper(BootstrapUtils.createBootstrapContext(testClass))); TestContextManager(TestContextBootstrapper testContextBootstrapper) this.testContext = testContextBootstrapper.buildTestContext(); SpringBootTestContextBootstrapper.buildTestContext() TestContext context = super.buildTestContext(); AbstractTestContextBootstrapper.buildTestContext() return new DefaultTestContext(getBootstrapContext().getTestClass(), buildMergedContextConfiguration(), getCacheAwareContextLoaderDelegate()); buildMergedContextConfiguration() return buildDefaultMergedContextConfiguration(testClass, cacheAwareContextLoaderDelegate); buildDefaultMergedContextConfiguration(Class&amp;lt;?&amp;gt; testClass, CacheAwareContextLoaderDelegate cacheAwareContextLoaderDelegate) return buildMergedContextConfiguration(testClass, defaultConfigAttributesList, null, cacheAwareContextLoaderDelegate, false); buildMergedContextConfiguration(Class&amp;lt;?&amp;gt; testClass, List&amp;lt;ContextConfigurationAttributes&amp;gt; configAttributesList, @Nullable MergedContextConfiguration parentConfig, CacheAwareContextLoaderDelegate cacheAwareContextLoaderDelegate, boolean requireLocationsClassesOrInitializers) Set&amp;lt;ContextCustomizer&amp;gt; contextCustomizers = getContextCustomizers(testClass, Collections.unmodifiableList(configAttributesList)); getContextCustomizers(Class&amp;lt;?&amp;gt; testClass, List&amp;lt;ContextConfigurationAttributes&amp;gt; configAttributes) ContextCustomizer customizer = factory.createContextCustomizer(testClass, configAttributes); ImportsContextCustomizerFactory.createContextCustomizer(Class&amp;lt;?&amp;gt; testClass, List&amp;lt;ContextConfigurationAttributes&amp;gt; configAttributes) return new ImportsContextCustomizer(testClass); ImportsContextCustomizer(Class&amp;lt;?</description>
+    </item>
+    
+  </channel>
+</rss>
